@@ -23,15 +23,22 @@ public class Updpractical5 {
     public static void main(String[] args) throws SocketException, UnknownHostException, IOException {
         Scanner sc=new Scanner(System.in);
         System.out.println("*****UDP CLIENT SIDE***********");
+        System.out.println("");
+        System.out.println("----------------------------");
+        System.out.println("");
+        System.out.println("Name : Sarvesh Solanke Section/Roll no : b-55");
+        System.out.println("");
+        System.out.println("----------------------------");
+        System.out.println("");
         DatagramSocket ds=new DatagramSocket();
         int i=6;
-        System.out.println("***menu***");
-        System.out.println("Addition of nums");
-        System.out.println("Subtraction of numsAddition of nums");
-        System.out.println("Multiplication of nums");
-        System.out.println("divition");
+        System.out.println("***MENU**");
+        System.out.println("1.Addition of nums");
+        System.out.println("2.Subtraction of nums");
+        System.out.println("3.Multiplication of nums");
+        System.out.println("4.Divition of nums");
         int ch=sc.nextInt();
-          System.out.println("enter two numbers");
+          System.out.println("Enter two numbers");
           int num1=sc.nextInt();
        
         int num2=sc.nextInt();

@@ -16,9 +16,11 @@ import java.net.SocketException;
  * @author HP PC
  */
 public class udpserver_conn_localhost {
+   
     
     public static void main(String args[]) throws SocketException, IOException
     {DatagramSocket ds=new DatagramSocket(9999);
+        System.out.println("Recevied Data from Client....");
     byte[] b1ch= new byte[1024];
       byte[] b1num1= new byte[1024];
         byte[] b1num2= new byte[1024];
@@ -39,7 +41,11 @@ public class udpserver_conn_localhost {
         int num=Integer.parseInt(schoice);
         int numed1=Integer.parseInt(num1);
         int numed2=Integer.parseInt(num2);
-        System.out.println("num"+num+"-"+numed1+numed2);
+        System.out.println("");
+        System.out.println("----------------------------");
+        System.out.println("");
+        System.out.println("numbers are :"+numed1+" & "+numed2);
+        
         int flag=0,result=0;
         if(num==1)
         {result=numed1+numed2;
@@ -55,7 +61,11 @@ public class udpserver_conn_localhost {
         { result=numed1/numed2;flag=+4;}
        else{System.out.println("Something went wrong ...Please Retry");}
        // int result=num*num;
-        System.out.println("result"+result);
+        System.out.println("Result Obtained is "+result);
+        System.out.println("");
+         System.out.println("----------------------------");
+         System.out.println("");
+        System.out.println("Sending Data Packet to Client.....");
          String res = Integer.toString(result); 
  
             //b1ch = res.getBytes(); 
